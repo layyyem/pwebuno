@@ -1,0 +1,294 @@
+body {
+    background: linear-gradient(to bottom, #43d3ff, #00a2d3, #00a2d3, #e570ff, #e570ff, #e570ff, #ffdd00, #ffdd00, #ffdd00);
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    margin: 0;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.label {
+    font-weight: bold;
+}
+
+#datos-personales {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+section h1 {
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.100);
+    color: #ffffff;
+    text-align: center;
+    font-size: 160px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.100);
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+
+#lista {
+    font-size: 25px;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+progress {
+    background-color: #878787;
+    display: block;
+    height: 25px;
+}
+
+progress[value] {
+    width: 45%;
+}
+
+progress::-webkit-progress-value {
+    background-color: #ffdd00;
+}
+
+#imagen1 {
+    float: right;
+    margin-top: -450px;
+    margin-right: -70px;
+    width: 35%;
+    border-radius: 25%;
+    border-width: 25px;
+    border-style: solid;
+    border-color: #ffffff77;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.100);
+}
+
+#proyectos {
+    margin-bottom: 40px;
+}
+
+section h3 {
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.300);
+    color: #ffe600;
+    text-align: center;
+    font-size: 160px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 80px;
+    right: -350px;
+}
+
+section h4 {
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.500);
+    color: #ffe600;
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+.imagenes-ejemplos {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenes-ejemplos .conjunto-imagenes {
+    flex: 1 1 300px;
+    max-width: 500px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.imagenes-ejemplos .conjunto-imagenes img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.100);
+    transition: transform 0.3s;
+}
+
+.imagenes-ejemplos .conjunto-imagenes a {
+    display: block;
+    margin-top: 100px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.imagenes-ejemplos .conjunto-imagenes:hover img {
+    transform: scale(1.1);
+}
+
+#contacto {
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    top: -180px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+textarea {
+    height: 100px;
+    width: 350px
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e570ff;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #efa9ff;
+    transform: scale(1.1);
+}
+
+section h5 {
+    font-size: 500%;
+}
+
+section h6 {
+    font-size: 200%;
+    position: relative;
+    top: -150px;
+}
+
+@media only screen and (max-width: 600px) {
+
+#datos-personales {
+width: 80%;
+}
+
+section h1 {
+font-size: 400%;
+position: relative;
+top: -10px;
+left: 10px;
+}
+
+section h2 {
+font-size: 150%;
+position: relative;
+top: -30px;
+left: 10px;
+}
+
+#lista {
+font-size: 20px;
+position: relative;
+left: -55px;
+}
+
+#imagen1 {
+float: right;
+margin-top: -200px;
+margin-right: -80px;
+width: 60%;
+}
+
+#proyectos {
+width: 80%;
+}
+
+section h3 {
+    font-size: 400%;
+    position: relative;
+    top: 70px;
+    left: 40px;
+}
+
+section h4 {
+    font-size: 100%;
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+
+.imagenes-ejemplos {
+    width: 100%;
+    position: relative;
+    left: 40px;
+}
+
+section h5 {
+    font-size: 250%;
+    position: relative;
+    top: -70px;
+}
+
+section h6 {
+    font-size: 80%;
+    position: relative;
+    top: -140px;
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1366px) {
+#datos-personales {
+    width: 60%;
+}
+
+section h1 {
+    font-size: 120px;
+}
+
+section h2 {
+    bottom: 45px;
+}
+
+#lista {
+    font-size: 20px;
+    position: relative;
+    left: -200px;
+    }
+
+#imagen1 {
+    float: right;
+    position: relative;
+    left: 300px;
+    top: 100px;
+    width: 50%;
+    }
+
+}
+

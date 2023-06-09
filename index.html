@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de curriculum web, en la cual puedes ver algunos de mis proyectos y contactarme" />
+    <meta name="keywords" content="HTML, CSS, Curriculum, Web, Proyectos, Contacto, Desarrollador" />
+    <meta name="author" content="Axel Lencina" />
+    <title>Curriculum WEB UNO</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="ajava.js"></script>
+</head>
+
+<body>
+    <section id="datos-personales">
+        <h1>Lencina Axel</h1>
+        <h2>Desarrollador web</h2>
+        <section id="lista">
+            <ul>
+                <li><span class="label">Nombre completo:</span><br> Axel Uriel Lencina</li>
+                <li><span class="label">Formación académica:</span><br> Secundario completo - Titulo universitario en tecnologías web</li>
+                <li><span class="label">Cualidades:</span><br> Trabajo en equipo, capacidad de adaptación, proactividad, creatividad.</li>
+                <li><span class="label">Nacionalidad:</span><br> Argentina</li>
+                <li><span class="label">Edad:</span><br> 18 años</li>
+                <li><span class="label">Idiomas:</span></li>
+                <li>Español: <progress value="100" max="100"></progress></li>
+                <li>Inglés: <progress value="50" max="100"></progress></li>
+                <img src="foto.jpg" id="imagen1">
+            </ul>
+        </section>
+    </section>
+
+    <section id="proyectos">
+        <h3>Proyectos</h3>
+        <h4>Algunos de mis trabajos recientes</h4>
+        <div class="imagenes-ejemplos">
+            <div class="conjunto-imagenes">
+                <a href="https://www.mercadolibre.com.ar/" target="_blank">
+                    <img src="web1.jpg">
+                </a>
+            </div>
+            <div class="conjunto-imagenes">
+                <a href="https://www.youtube.com/" target="_blank">   <!-- Supuestos proyectos que use a modo de ejemplo -->
+                    <img src="web2.jpg">
+                </a>
+            </div>
+            <div class="conjunto-imagenes">
+                <a href="https://twitter.com/home" target="_blank">
+                    <img src="web3.jpg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h5>¡Contactate conmigo!</h5>
+        <h6>A continuacion rellena los datos, cuentame sobre tus ideas y sobre la propuesta de trabajo...</h6>
+    
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="propuesta-salarial">Propuesta Salarial (en pesos):</label>
+                <input type="number" id="propuesta-salarial" name="propuesta-salarial" required>
+                <span id="propuesta-error" class="error"></span>
+            </div>
+    
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    
+        <div id="formulario-enviado">
+            <h4>Formularios Enviados:</h4>
+            <table id="form-data-table">
+                <thead>
+                    <tr>
+                        <th onclick="ordenarTabla('nombre')">Nombre</th>
+                        <th onclick="ordenarTabla('email')">Email</th>
+                        <th onclick="ordenarTabla('propuesta-salarial')">Propuesta Salarial (en pesos)</th>
+                        <th onclick="ordenarTabla('propuesta-salarial-dolares')">Propuesta Salarial (en dólares)</th>
+                        <th onclick="ordenarTabla('propuesta-salarial-euros')">Propuesta Salarial (en euros)</th>
+                    </tr>
+                </thead>
+                <tbody id="form-data-body"></tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
