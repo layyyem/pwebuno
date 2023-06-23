@@ -193,6 +193,45 @@ section h6 {
     top: -150px;
 }
 
+
+table {
+    width: 100%;
+}
+
+th,
+
+th.active {
+    background-color: #e570ff;
+}
+
+th {
+    cursor: pointer;
+}
+
+th.active::after {
+    content: '\25B2';
+    float: right;
+    margin-left: 5px;
+}
+
+th.descending::after {
+    content: '\25BC';
+}
+
+
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+td {
+    background-color: #ffffff;
+}
+.center {
+    text-align: center;
+}
+
+
 @media only screen and (max-width: 600px) {
 
 #datos-personales {
@@ -274,6 +313,10 @@ section h1 {
 
 section h2 {
     bottom: 45px;
+}
+
+section h3 {
+    left: 25px;
 }
 
 #lista {

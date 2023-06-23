@@ -70,9 +70,8 @@
             </div>
     
             <div class="form-group">
-                <label for="propuesta-salarial">Propuesta Salarial (en pesos):</label>
+                <label for="propuesta-salarial">Propuesta Salarial:</label>
                 <input type="number" id="propuesta-salarial" name="propuesta-salarial" required>
-                <span id="propuesta-error" class="error"></span>
             </div>
     
             <div class="form-group">
@@ -82,23 +81,19 @@
     
             <button type="submit">Enviar</button>
         </form>
-    
-        <div id="formulario-enviado">
-            <h4>Formularios Enviados:</h4>
-            <table id="form-data-table">
-                <thead>
-                    <tr>
-                        <th onclick="ordenarTabla('nombre')">Nombre</th>
-                        <th onclick="ordenarTabla('email')">Email</th>
-                        <th onclick="ordenarTabla('propuesta-salarial')">Propuesta Salarial (en pesos)</th>
-                        <th onclick="ordenarTabla('propuesta-salarial-dolares')">Propuesta Salarial (en dólares)</th>
-                        <th onclick="ordenarTabla('propuesta-salarial-euros')">Propuesta Salarial (en euros)</th>
-                    </tr>
-                </thead>
-                <tbody id="form-data-body"></tbody>
-            </table>
-        </div>
     </section>
+
+    <table id="tabla-formulario">
+        <thead>
+            <tr>
+                <th onclick="cambiarOrden('nombre')">Nombre</th>
+                <th onclick="cambiarOrden('email')">Email</th>
+                <th onclick="cambiarOrden('propuesta-salarial')">Propuesta Salarial</th>
+                <th onclick="cambiarOrden('mensaje')">Mensaje</th>
+            </tr>
+        </thead>
+        <tbody id="informacion-formulario"></tbody>
+    </table>
 </body>
 
 </html>
